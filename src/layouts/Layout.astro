@@ -1,6 +1,5 @@
 ---
 import Header from "@/components/layout/Header.astro";
-import Footer from "@/components/layout/Footer.astro";
 import '@fontsource/forum';
 import { ClientRouter } from "astro:transitions";
 interface Props {
@@ -32,7 +31,6 @@ const{
 		<img src="/bg.webp" class=" fixed object-cover top-0 left-0 w-full h-full z-[-1] " alt="">
 		<Header />
 		<slot />
-		<Footer />
 	</body>
 </html>
 
