@@ -1,0 +1,62 @@
+---
+export interface Props {
+    id?: string;
+}
+const { id } = Astro.props;
+---
+<button id={id}>
+    <div></div>
+    <div></div>
+    <div></div>
+</button>
+
+<style>
+    button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid #EFE7D220;
+        border-radius: .5rem;
+        background: #efe7d205;
+        gap: .47rem;
+        transition: ease-in-out .5s;
+        padding: 5px;
+    }
+
+    button:hover {
+        background: #EFE7D215;
+        border-color: #EFE7D220;
+    }
+
+    button > div {
+        background: #EFE7D2;
+        height: 1px;
+        width: 100%;
+        border-radius: 5px;
+        transition: all .5s;
+        transform-origin: center;
+    }
+
+    button div:nth-child(2) {
+        opacity: 0;
+    }
+
+    button div:first-child{
+        transform: translateY(8.7px) rotate(45deg);
+    }
+
+    button div:last-child{
+        transform: translateY(-8.7px) rotate(-45deg);
+    }
+
+    button:hover div:first-child{
+        transform: translateY(8.7px) rotate(0deg);
+    }
+
+    button:hover div:last-child{
+        transform: translateY(-8.7px) rotate(0deg);
+    }
+</style>

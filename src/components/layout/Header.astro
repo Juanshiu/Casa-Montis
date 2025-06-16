@@ -1,0 +1,54 @@
+---
+import Arrows from "../Arrows.astro"
+import ButtonHC from "../ButtonHClose.astro"
+import ButtonHO from "../ButtonHOpen.astro"
+import TitleArrow from "../TitleArrow.astro"
+---
+<header class="fixed z-[9999] top-10 lg:top-12 xl:top-16 left-1/2 -translate-x-1/2 sm:left-16 sm:translate-x-0 md:left-1/2 md:-translate-x-1/2 xl:left-16 xl:translate-x-0 size-auto font-texto">
+    <div class="w-auto h-16 gap-4 bg-bg-main text-text-light py-4 px-3 rounded-xl flex items-center justify-between">
+
+        <!-- Diálogo del menú -->
+        <dialog id="myDialog" class=" lg:hidden p-8 size-full bg-[#111111] rounded-2xl border border-text-light/20 overflow-hidden" closedby="any">
+            <form method="dialog" class=" flex flex-col lg:items-start items-end gap-4">
+                <ButtonHO/>
+            </form>
+            <nav class=" size-full flex flex-col items-center justify-center gap-1 text-4xl sm:text-6xl font-light text-text-light font-titulo">
+                <Arrows/>
+                <a href="/menu" class=" p-2 rounded-lg hover:bg-text-light/5 transition-colors">MENÚ</a>
+                <a href="/acercade" class=" p-2 rounded-lg hover:bg-text-light/5 transition-colors">ACERCA DE</a>
+                <a href="/contactos" class=" p-2 rounded-lg hover:bg-text-light/5 transition-color">CONTACTO</a>
+                <a href="/blog" class=" p-2 rounded-lg hover:bg-text-light/5 transition-color">BLOG</a>
+                <Arrows/>
+        </dialog>
+
+        <ButtonHC id="myDialog"></ButtonHC>
+        
+        <!-- Logo -->
+        <a href="/" class="mx-3">
+            <img src="/logo.webp" class="size-10" alt="Logo">
+        </a>
+        
+        <!-- Menú de navegación -->
+        <nav class="hidden lg:flex items-center text-sm font-light gap-3">
+            <a href="/menu" class=" p-2 rounded-lg hover:bg-text-light/5 transition-colors">MENÚ</a>
+            <a href="/acercade" class=" p-2 rounded-lg hover:bg-text-light/5 transition-colors">ACERCA DE</a>
+            <a href="/contactos" class=" p-2 rounded-lg hover:bg-text-light/5 transition-color">CONTACTO</a>
+            <a href="/blog" class=" p-2 rounded-lg hover:bg-text-light/5 transition-color">BLOG</a>
+        </nav>
+    </div>
+</header>
+
+<script is:inline>
+    document.addEventListener("astro:page-load", () => {
+
+    const dialog = document.getElementById('myDialog');
+    const openButton = document.querySelector('button#myDialog');
+
+    openButton.addEventListener('click', () => {
+        dialog.showModal();
+    });
+
+    });
+    
+
+</script>
