@@ -1,0 +1,13 @@
+---
+export interface Props {
+    dia: string;
+    hora: string;
+}
+const { dia, hora } = Astro.props;
+---
+
+<div class=" flex items-center justify-between">
+    <span>{dia}</span>
+    <div class="flex-grow border-t border-dotted border-text-light/30 mx-3 mt-3"></div>
+    <span>{hora}</span>
+</div>
