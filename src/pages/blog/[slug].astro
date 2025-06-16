@@ -1,0 +1,54 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import blogData from "@/json/blog.json";
+import TitleArrow from "@/components/TitleArrow.astro";
+import Arrows from "@/components/Arrows.astro";
+
+
+export async function getStaticPaths() {
+    const { blog } = blogData;
+    // Convertir el objeto blog en un array de rutas
+    return Object.entries(blog).map(([key, article]) => {
+        return {
+            params: { slug: article.slug },
+            props: { 
+                title: article.titulo,
+                content: article.contenido,
+                date: article.fecha,
+                image: article.imagen,
+                description: article.descripcion
+            },
+        };
+    });
+}
+
+const { title, content, date, image, description } = Astro.props;
+---
+
+<Layout title={`Casa Montis - ${title}`} description={description}>
+    <main class="relative flex flex-col xl:flex-row gap-4 p-4 xl:p-6 w-full h-auto xl:h-screen">
+    
+		<section class="relative bg-cover bg-center bg-no-repeat rounded-2xl xl:w-1/2 h-[23.5rem] md:h-[45rem] lg:h-[37rem] xl:h-full overflow-hidden">
+            <img 
+                src={image} 
+                alt={title}
+                class="w-full h-full object-cover"
+                transition:name="imageblog"    
+            />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent from-10% via-transparent via-60% to-black/70 to-90%"></div>
+		</section>
+
+		<!-- Menu Section -->
+		<section class=" flex flex-col w-full h-auto xl:w-1/2 rounded-2xl gap-4 py-8 sm:py-10 px-8 sm:px-24 border border-text-light/20 overflow-y-auto overflow-x-hidden ">
+            <article class="flex flex-col gap-6 items-center">
+                <TitleArrow>
+                    <span class="text-sm font-texto text-text-light">{date}</span>
+                </TitleArrow>
+                <h1 class=" text-4xl sm:text-6xl text-center font-light tracking-wider text-text-light">{title}</h1>
+                <Arrows/>
+                <p class=" text-2xl sm:text-4xl font-bold text-text-light mt-8">{description}</p>
+                <p class=" prose font-texto font-light text-text-light/80">{content}</p>
+            </article>
+		</section>
+	</main>
+</Layout>

@@ -1,0 +1,37 @@
+---
+import Notices from "@/components/notices.astro";
+import blogData from "@/json/blog.json";
+import TitleArrow from "@/components/TitleArrow.astro";
+import Layout from "@/layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import Sections from "@/components/Sections.astro";
+
+const { blog } = blogData;
+---
+
+<Layout title="Casa Montis - Blog"
+    description="Descubre las últimas noticias y artículos del blog de Casa Montis. Mantente al día con nuestras novedades, recetas y eventos especiales. ¡Explora nuestro mundo gourmet!">
+    <main class="relative flex flex-col xl:flex-row gap-4 p-4 xl:p-6 w-full h-auto xl:h-screen">
+    
+		<Sections
+            title="BLOG" 
+            image="/img/home/blog.webp"
+        />
+
+		<!-- Menu Section -->
+		<section class=" flex flex-col w-full h-min xl:w-1/2 rounded-2xl gap-4 py-16 px-8 sm:px-24 border border-text-light/20">
+            <TitleArrow class=" text-4xl">ÚLTIMAS NOTICIAS</TitleArrow>
+            <article class="flex flex-col gap-6 mt-8">
+                {Object.entries(blog).map(([key, article]) => (
+                    <Notices
+                        title={article.titulo}
+                        description={article.descripcion}
+                        date={article.fecha}
+                        image={article.imagen}
+                        link={article.link}
+                    />
+                ))}
+            </article>
+		</section>
+	</main>
+</Layout>
