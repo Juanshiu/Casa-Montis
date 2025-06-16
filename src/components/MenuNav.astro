@@ -1,0 +1,24 @@
+---
+const categories = [
+    { id: "pescado", name: "PESCADO" },
+    { id: "pollo", name: "POLLO" },
+    { id: "arroz", name: "ARROZ" },
+    { id: "res_y_cerdo", name: "RES Y CERDO" },
+    { id: "pastas", name: "PASTAS" },
+    { id: "desayuno", name: "DESAYUNOS" },
+    { id: "especiales", name: "ESPECIALES" }
+];
+---
+
+<div class="menu-nav flex flex-wrap justify-center gap-1 pb-8">
+    {
+        categories.map((category) => (
+            <a
+                href={`#${category.id}`}
+                class="py-1.5 px-2 bg-background border border-text-light/20 hover:border-text-light/40 rounded-md text-text-light/90 transition-colors text-xs font-texto"
+            >
+                {category.name}
+            </a>
+    ))
+    }
+</div>

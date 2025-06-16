@@ -1,0 +1,54 @@
+---
+import { Image } from 'astro:assets';
+import TitleArrow from './TitleArrow.astro';
+
+interface Props {
+    title: string;
+    items: any[];
+}
+
+const { title, items } = Astro.props;
+
+const srcImage = (image: string) => {
+    return `/img/menu/${image}`;
+};
+
+---
+
+<div class="py-8">
+    <TitleArrow class='text-3xl mb-10'>
+        {title.toUpperCase()}
+    </TitleArrow>
+
+    <div class=" space-y-8">
+        {
+        items.map((item) => (
+            <div class=" flex flex-col lg:flex-row gap-4 lg:items-center">
+                <div class=" size-full lg:w-40 lg:h-28 rounded-lg overflow-hidden flex-shrink-0">
+                    <Image
+                        src={srcImage(item.imagen)}
+                        alt={item.nombre}
+                        class="w-full h-full object-cover"
+                        // loading="lazy"
+                        decoding="async"
+                        width={160}
+                        height={112}
+                        format={"avif"}
+                        quality={"low"}
+                        onerror="this.style.display='none'"
+                    />
+                </div>
+            
+                <div class="flex-grow">
+                    <div class="flex items-start justify-between flex-wrap gap-2">
+                        <h3 class="text-xl font-medium text-text-light flex-shrink-0 max-w-[60%] break-words leading-tight">{item.nombre}</h3>
+                        <div class="flex-grow border-t border-dotted border-text-light/30 mx-3 mt-3"></div>
+                        <span class="text-xl text-text-light flex-shrink-0">${(item.precio || 0).toLocaleString()}</span>
+                    </div>
+                    <p class="text-text-light/60 text-sm font-titulo mt-1">{item.acompañamientos}</p>
+                </div>
+            </div>
+        ))
+        }
+    </div>
+</div>

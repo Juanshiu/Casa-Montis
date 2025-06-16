@@ -1,0 +1,47 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import MenuCategory from "@/components/MenuCategory.astro";
+import MenuNav from "@/components/MenuNav.astro";
+import menuData from "@/json/menu.json";
+import ScrolltoTop from "@/components/ScrolltoTop.astro";
+import Sections from "@/components/Sections.astro";
+
+const { menu } = menuData;
+
+const categoryTitles: Record<string, string> = {
+	pescado: "PESCADO",
+	pollo: "POLLO",
+	arroz: "ARROZ",
+	res_y_cerdo: "RES Y CERDO", 
+	pastas: "PASTAS",
+	desayuno: "DESAYUNOS",
+	especiales: "ESPECIALES"
+};
+---
+
+<Layout title="Casa Montis - Menú" description="Descubre el delicioso menú de Casa Montis, con una variedad de platos que incluyen pescados frescos, pollo jugoso, arroces exquisitos, pastas artesanales y desayunos irresistibles. ¡Disfruta de una experiencia gastronómica única!">
+    <main class="relative flex flex-col xl:flex-row gap-4 p-4 xl:p-6 w-full h-auto xl:h-screen">
+    
+		<Sections 
+			title="MENÚ" 
+			image="/img/home/menu3.jpg"
+		/>
+
+		<!-- Ancla invisible para el scroll to top -->
+		<div id="top"></div>
+		<section id="menu-section" class="flex flex-col w-full xl:w-1/2 h-full border border-text-light/20 rounded-2xl px-4 lg:px-20 py-8  sm:py-[4.5rem] overflow-y-auto overflow-x-hidden scroll-smooth">
+			
+			<MenuNav />
+
+			{Object.entries(menu).map(([category, items]) => (
+				<article id={category}>
+					<MenuCategory 
+						title={categoryTitles[category]} 
+						items={items} 
+					/>
+				</article>
+			))}
+		</section>
+		<ScrolltoTop />
+	</main>
+</Layout>

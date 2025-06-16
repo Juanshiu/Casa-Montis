@@ -1,0 +1,290 @@
+{
+    "menu": {
+        "pescado": [
+            {
+                "nombre": "TRUCHA A LA MARINERA",
+                "acompañamientos": "Patacón, papa a la francesa y ensalada.",
+                "precio": 50000,
+                "imagen": "trucha_marinera.jpg"
+            },
+            {
+                "nombre": "TRUCHA A LA PLANCHA",
+                "acompañamientos": "Patacón, papa a la francesa y ensalada.",
+                "precio": 35000,
+                "imagen": "trucha_plancha.jpg"
+            },
+            {
+                "nombre": "TRUCHA AL AJILLO",
+                "acompañamientos": "Patacón, papa a la francesa y ensalada.",
+                "precio": 40000,
+                "imagen": "trucha_ajillo.jpg"
+            },
+            {
+                "nombre": "SALMÓN SUECO",
+                "acompañamientos": "Patacón, papa a la francesa y ensalada.",
+                "precio": 53000,
+                "imagen": "salmon_sueco.jpg"
+            },
+            {
+                "nombre": "RÓBALO A LA MARINERA",
+                "acompañamientos": "Patacón, papa a la francesa, ensalada.",
+                "precio": 60000,
+                "imagen": "robalo_marinera.jpg"
+            },
+            {
+                "nombre": "RÓBALO A LA PLANCHA",
+                "acompañamientos": "Patacón, papa a la francesa, ensalada.",
+                "precio": 50000,
+                "imagen": "robalo_plancha.jpg"
+            },
+            {
+                "nombre": "RÓBALO AL AJILLO",
+                "acompañamientos": "Patacón, papa a la francesa, ensalada.",
+                "precio": 55000,
+                "imagen": "robalo_ajillo.jpg"
+            },
+            {
+                "nombre": "MOJARRA FRITA",
+                "acompañamientos": "Arroz, patacón, yuca, ensalada.",
+                "precio": 35000,
+                "imagen": "mojarra_frita.jpg"
+            },
+            {
+                "nombre": "VIUDO DE BAGRE",
+                "acompañamientos": "Arroz, patacón, yuca, ensalada.",
+                "precio": 40000,
+                "imagen": "viudo_bagre.jpg"
+            },
+            {
+                "nombre": "VIUDO DE BOCACHICO",
+                "acompañamientos": "Arroz, patacón, yuca, ensalada.",
+                "precio": 55000,
+                "imagen": "viudo_bocachico.jpg"
+            },
+            {
+                "nombre": "CEVICHE",
+                "acompañamientos": "Chip de plátano.",
+                "precio": 40000,
+                "imagen": "ceviche.jpg"
+            },
+            {
+                "nombre": "CAZUELA DE PESCADO",
+                "acompañamientos": "Arroz, patacón, yuca, ensalada.",
+                "precio": 50000,
+                "imagen": "cazuela_pescado.jpg"
+            },
+            {
+                "nombre": "CAZUELA CON MARISCOS",
+                "acompañamientos": "Arroz, patacón, yuca, ensalada.",
+                "precio": 53000,
+                "imagen": "cazuela_mariscos.jpg"
+            },
+            {
+                "nombre": "PAELLA",
+                "acompañamientos": "Chip de plátano patacona.",
+                "precio": 47000,
+                "imagen": "paella.jpg"
+            }
+        ],
+
+        "pollo": [
+            {
+                "nombre": "PECHUGA MARINERA",
+                "acompañamientos": "Patacón, papa a la francesa, ensalada.",
+                "precio": 45000,
+                "imagen": "pechuga_marinera.jpg"
+            },
+            {
+                "nombre": "PECHUGA HAWAIANA",
+                "acompañamientos": "Patacón, papa a la francesa, ensalada.",
+                "precio": 40000,
+                "imagen": "pechuga_hawaiana.jpg"
+            },
+            {
+                "nombre": "PECHUGA GOURMET",
+                "acompañamientos": "Patacón, papa a la francesa, ensalada.",
+                "precio": 35000,
+                "imagen": "pechuga_gourmet.jpg"
+            },
+            {
+                "nombre": "PECHUGA MAÍZ AL QUESO",
+                "acompañamientos": "Patacón, papa a la francesa, ensalada.",
+                "precio": 40000,
+                "imagen": "pechuga_maiz_queso.jpg"
+            },
+            {
+                "nombre": "PECHUGA GRILLE",
+                "acompañamientos": "Maduro gratinado, papa, ensalada.",
+                "precio": 40000,
+                "imagen": "pechuga_grille.jpg"
+            }
+        ],
+
+        "arroz": [
+            {
+                "nombre": "ARROZ CON POLLO",
+                "acompañamientos": "Papa a la francesa.",
+                "precio": 35000,
+                "imagen": "arroz_pollo.jpg"
+            },
+            {
+                "nombre": "ARROZ MIXTO",
+                "acompañamientos": "Papa a la francesa.",
+                "precio": 35000,
+                "imagen": "arroz_mixto.jpg"
+            },
+            {
+                "nombre": "ARROZ CON CAMARÓN",
+                "acompañamientos": "Papa a la francesa.",
+                "precio": 45000,
+                "imagen": "arroz_camaron.jpg"
+            }
+        ],
+
+        "res_y_cerdo": [
+            {
+                "nombre": "CHURRAZCO",
+                "acompañamientos": "Patacón, yuca, ensalada.",
+                "precio": 38000,
+                "imagen": "churrazco.jpg"
+            },
+            {
+                "nombre": "LOMO DE CERDO",
+                "acompañamientos": "Patacón, yuca, ensalada.",
+                "precio": 35000,
+                "imagen": "lomo_cerdo.jpg"
+            },
+            {
+                "nombre": "LOMO DE CERDO TROPICAL",
+                "acompañamientos": "Patacón, yuca, ensalada.",
+                "precio": 40000,
+                "imagen": "lomo_cerdo_tropical.jpg"
+            },
+            {
+                "nombre": "COSTILLAS DE CERDO BBQ",
+                "acompañamientos": "Patacón, yuca, ensalada.",
+                "precio": 40000,
+                "imagen": "costillas_bbq.jpg"
+            },
+            {
+                "nombre": "TABLA MIXTA",
+                "acompañamientos": "Patacón, yuca, ensalada.",
+                "precio": 45000,
+                "imagen": "tabla_mixta.jpg"
+            }
+        ],
+
+        "pastas": [
+            {
+                "nombre": "PASTA PAD THAI",
+                "acompañamientos": "Tostadas.",
+                "precio": 43000,
+                "imagen": "pasta_pad_thai.jpg"
+            },
+            {
+                "nombre": "MAR Y TIERRA",
+                "acompañamientos": "Tostadas.",
+                "precio": 40000,
+                "imagen": "mar_tierra.jpg"
+            },
+            {
+                "nombre": "PASTA CARBONARA",
+                "acompañamientos": "Pan.",
+                "precio": 40000,
+                "imagen": "pasta_carbonara.jpg"
+            }
+        ],
+
+        "desayuno": [
+            {
+                "nombre": "TORTIN DE AGUACATE",
+                "acompañamientos": "Pan, agucate, Huevo en tortilla, fruta.",
+                "precio": 19000,
+                "imagen": "tortin_aguacate.jpg"
+            },
+            {
+                "nombre": "HUEVOS MONTIS CON AMOR",
+                "acompañamientos": "Huevo, pan, queso, fruta y salsa de la casa.",
+                "precio": 20000,
+                "imagen": "huevos_amor.jpg"
+            },
+            {
+                "nombre": "HUEVOS MONTI'S A LA CACEROLA",
+                "acompañamientos": "Huevo, pan, queso, salsa de la casa.",
+                "precio": 20000,
+                "imagen": "huevos_cacerola.jpg"
+            },
+            {
+                "nombre": "BISTEC A CABALLO MONTI'S",
+                "acompañamientos": "Pan, carne desmechada, aguacate y huevo ponchado.",
+                "precio": 22000,
+                "imagen": "bistec_caballo.jpg"
+            },
+            {
+                "nombre": "HUEVOS RANCHEROS MONTI'S",
+                "acompañamientos": "Salchicha, huevo, tomate, maicitos, queso, nachos, patacón.",
+                "precio": 22000,
+                "imagen": "huevos_rancheros.jpg"
+            },
+            {
+                "nombre": "CALENTADO DE FRIJOL",
+                "acompañamientos": "Arroz, frijol, huevo con carne y  cerdo y arepas.",
+                "precio": 19000,
+                "imagen": "calentado_frijol.jpg"
+            }
+        ],
+
+        "especiales": [
+            {
+                "nombre": "PECHUGA EN SALSA DE MANZANA",
+                "acompañamientos": "Arroz, ensalada, chips de plátano.",
+                "imagen": "pechuga_salsa_manzana.jpg"
+            },
+            {
+                "nombre": "FRIJOLADA",
+                "acompañamientos": "Arroz, arepa, huevo, maduro y salchicha.",
+                "imagen": "frijolada.jpg"
+            },
+            {
+                "nombre": "PECHUGA EN SALSA MIEL",
+                "acompañamientos": "Ensalada mixta con maní, casquillos de papa dulce.",
+                "imagen": "pechuga_salsa_miel.jpg"
+            },
+            {
+                "nombre": "PECHUGA SALTEADA EN CAMA DE PURÉ DE PAPA",
+                "acompañamientos": "Trozitos de pechuga en salsa, arroz, pure de papa, monedas de platano y aguacate.",
+                "imagen": "bandeja_montis.jpg"
+            },
+            {
+                "nombre": "BANDEJA MONTIS 2",
+                "acompañamientos": "Trozos de carne, brocoli en salsa, patacón apanado y aguacate.",
+                "imagen": "bandeja_montis_2.jpg"
+            },
+            {
+                "nombre": "CERDO/RES EN REDUCCIÓN AL VINO",
+                "acompañamientos": "Arroz, fritas, ensalada.",
+                "imagen": "reduccion_vino.jpg"
+            },
+            {
+                "nombre": "ROLLITOS DE PECHUGA EN SALSA DE LA CASA",
+                "acompañamientos": "Arroz, ensalada, patacón y aguacate.",
+                "imagen": "rollitos_pechuga.jpg"
+            },
+            {
+                "nombre": "PECHUGA APANADA Y GRATINADA EN SALSA NAPOLITANA",
+                "acompañamientos": "Arroz, patacón, aguacate y ensalada.",
+                "imagen": "pechuga_apanada.jpg"
+            },
+            {
+                "nombre": "SALTEADO DE LOMO PERUANO",
+                "acompañamientos": "Arroz y papa a la francesa.",
+                "imagen": "lomo_peruano.jpg"
+            },
+            {
+                "nombre": "PEPINO RELLENO EN SALSA CHAMPIÑON",
+                "acompañamientos": "Arroz, patacón, aguacate y ensalada.",
+                "imagen": "pepino_relleno.jpg"
+            }
+        ]
+    }
+}
