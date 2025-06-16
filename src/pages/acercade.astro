@@ -1,0 +1,55 @@
+---
+import TitleArrow from "@/components/TitleArrow.astro";
+import Layout from "@/layouts/Layout.astro";
+import Star from "@/assets/svg/Star.svg";
+import Carrusel from "@/components/Carrusel.astro";
+import Sections from "@/components/Sections.astro";
+---
+
+<Layout title="Casa Montis - Acerca de" description="Descubre la historia y esencia de Casa Montis, un restaurante que fusiona tradición y sabores gourmet. Conoce nuestro compromiso con la calidad y la experiencia gastronómica única que ofrecemos.">
+    <main class="relative flex flex-col xl:flex-row gap-4 p-4 xl:p-6 w-full h-auto xl:h-screen">
+    
+        <Sections 
+            title="ACERCA DE" 
+            image="/img/home/acercade.webp"
+        />
+
+        <!-- Menu Section -->
+        <section class="grid grid-cols-1 md:grid-cols-11 md:grid-rows-[1fr_auto_1fr] w-full xl:w-1/2 h-full rounded-2xl gap-4">
+
+            <article class=" bg-bg-main/50 flex flex-col justify-between p-9 md:col-span-6 gap-8 border border-text-light/20 rounded-2xl">
+                <h2 class=" text-text-light text-2xl">ARDE EN SABORES, CAFÉ VIVO Y POSTRES MÁGICOS.</h2>
+                <p class=" text-text-light text font-texto font-thin not-italic">El lugar ideal para compartir momentos especiales con tus seres queridos, ya sea con un buen platillo gourmet o un cafecito acompañado con un delicioso postre</p>
+            </article>
+
+            <article class=" bg-bg-main/50 flex flex-col justify-between md:col-span-5 border border-text-light/20 rounded-2xl">
+                <Carrusel img1="/img/acercade/1.jpg" img2="/img/acercade/2.jpg" img3="/img/acercade/3.jpg" />
+            </article>
+
+            <article class=" bg-bg-main/50  p-9 md:col-span-11 h-36 border border-text-light/20 rounded-2xl">
+                <a href="https://maps.app.goo.gl/Mfns9ZdCoQkr8erd8" target="_blank" class=" flex flex-col justify-center items-center text-text-light">
+                    <div class=" flex gap-1 mb-2">
+                        {
+                            Array.from({ length: 5 }, (_, index) => (
+                                <Star class="inline-block text-text-light w-4" />
+                            ))
+                        }
+                    </div>
+                    <span class=" text-2xl">4.6</span>
+                    <h3 class=" text-xl">GOOGLE MAPS</h3>
+                </a>
+            </article>
+
+            <article class=" bg-bg-main/50 md:col-span-5 border border-text-light/20 rounded-2xl">
+                <Carrusel img1="/img/acercade/4.jpg" img2="/img/acercade/5.jpg" img3="/img/acercade/6.jpg" />
+            </article>
+
+            <article class=" bg-bg-main/50 flex flex-col justify-between p-9 md:col-span-6 gap-8 border border-text-light/20 rounded-2xl">
+                <TitleArrow class="text-2xl">
+                    NUESTRA HISTORIA
+                </TitleArrow>
+                <p class=" text-text-light text font-texto font-thin not-italic">Con más de 5 años ofreciendo el mejor sazón, Casa Montis nació como un sueño familiar. Fusionamos la tradición local con un toque gourmet, inspirados en el café de nuestras tierras y los postres artesanales, para ofrecer sabores que cuentan nuestra historia.</p>
+            </article>
+        </section>
+    </main>
+</Layout>
