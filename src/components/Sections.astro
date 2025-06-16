@@ -1,0 +1,20 @@
+---
+export interface Props {
+    title: string;
+    image: string;
+    class?: string;
+}
+
+const { title, image, class: className } = Astro.props;
+---
+<section class={`${className} relative bg-cover bg-center bg-no-repeat rounded-2xl xl:w-1/2 h-[23.5rem] md:h-[45rem] lg:h-[37rem] xl:h-full overflow-hidden`}>
+    <img 
+        src={image}
+        alt={title}
+        class=" absolute size-full object-cover"
+    />
+    <div class=" absolute size-full rounded-xl bg-gradient-to-b from-transparent from-10% via-transparent via-60% to-black/50 to-90%"></div>
+    <h1 class="text-4xl sm:text-7xl xl:text-8xl absolute text-text-light bottom-2 sm:bottom-8 left-3 sm:left-14 animate-fade animate-delay-500">
+        {title}
+    </h1>
+</section>
