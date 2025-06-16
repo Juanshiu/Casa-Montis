@@ -1,11 +1,49 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from '@/layouts/Layout.astro';
+import Facebook from '@/assets/svg/facebook2.svg';
+import Whatsapp from '@/assets/svg/whatsapp2.svg';
+import Badge from "@/components/Badge.astro"
+import Items from "@/components/Items.astro"
+import Itemslide from '@/components/Itemslide.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Casa Montis" description="Restaurante Casa Montis, ubicado en el corazón del Huila, Palermo. Disfruta de una experiencia gastronómica única con nuestros deliciosos platos y un ambiente acogedor. ¡Te esperamos!">
+	<main class="flex flex-col xl:flex-row gap-4 p-4 xl:p-6 w-full h-auto xl:h-screen">
+    
+		<section class=" bg-[url(/img/home/home.webp)] relative bg-cover bg-center bg-no-repeat rounded-2xl xl:w-3/4 h-[23.5rem] md:h-[45rem] lg:h-[37rem] xl:h-full">
+
+			<div class=" size-full rounded-xl bg-gradient-to-b from-transparent from-10% via-transparent via-60%  to-black/50 to-90% "></div>
+			<h1 class=" text-4xl sm:text-8xl xl:text-9xl absolute text-text-light bottom-2 sm:bottom-8 left-3 sm:left-14 animate-fade animate-delay-500">
+				SENSACION<br>
+				GOURMET
+			</h1>
+
+			<Badge class='h-[3.2rem]'>
+				<div class=" flex justify-center items-center gap-3">
+					<a href="https://www.facebook.com/MontisCasa" target="_blank" class=" p-[7px] border border-text-light/35 hover:border-text-light/80 transition-colors rounded-full">
+						<Facebook height={17} width={17} />
+					</a>
+					<a href="https://wa.me/3132171025" target="_blank" class=" p-[7px] border border-text-light/35 hover:border-text-light/80 transition-colors rounded-full">
+						<Whatsapp height={17} width={17} />
+					</a>
+				</div>
+				
+			</Badge>
+		</section>
+
+		<section class=" flex flex-col lg:flex-row xl:flex-col gap-4 w-full xl:w-1/4 h-full">
+			
+			<Itemslide 
+				title="MENÚ" 
+				link="/menu" 
+				images={["ceviche.jpg", "viudo_bagre.jpg", "viudo_bocachico.jpg", "paella.jpg", "arroz_pollo.jpg", "cazuela_mariscos.jpg", "mojarra_frita.jpg", "huevos_amor.jpg", "arroz_camaron.jpg", "arroz_mixto.jpg"]} 
+			/>
+			
+			<Items title="CONTACTOS" link="/contactos" image="contactos.webp" />
+			
+			<Items title="NUESTRO RESTAURANTE" link="/acercade" image="acercade.webp" />
+			
+		</section>
+
+	</main>
 </Layout>

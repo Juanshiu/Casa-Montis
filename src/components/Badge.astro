@@ -1,0 +1,27 @@
+---
+export interface Props {
+    class?: string;
+}
+const { class:className } = Astro.props;
+---
+<div class="absolute bottom-0 right-0 flex flex-col items-end">
+    <!-- Elemento decorativo superior -->
+    <div class='relative'>
+        <svg width="24" height="24" fill="currentColor"><path d="M 24 24 L 24 0 C 24 13.255 13.255 24 0 24 Z" class="fill-bg-main"></path></svg>
+    </div>
+    
+    <!-- Contenedor del título con SVG adaptable -->
+    <div class="flex items-end">
+        <!-- SVG que se adapta automáticamente al ancho del texto -->
+        <div class="relative">
+            <svg width="24" height="24" fill="currentColor"><path d="M 24 24 L 24 0 C 24 13.255 13.255 24 0 24 Z" class="fill-bg-main"></path></svg>
+        </div>
+        
+        <!-- Texto del título -->
+        <div class={`z-50 flex items-center h-11  bg-bg-main rounded-tl-3xl rounded-br-lg ${className}`}>
+            <span class="text-lg px-4 text-text-light">
+                <slot/>
+            </span>
+        </div>
+    </div>
+</div>
