@@ -18,4 +18,4 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para má
 
 ---
 
-Este proyecto está alojado en https://casa-montis.vercel.app/.
+Este proyecto está alojado en VERCEL: https://casa-montis.vercel.app/.
