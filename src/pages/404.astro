@@ -1,0 +1,20 @@
+---
+import TitleArrow from "@/components/TitleArrow.astro";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout>
+    <main class=" size-full bg-bg-main flex items-center justify-center p-4">
+        <section class="  bg-[#111111] size-full rounded-2xl border border-text-light/20 flex flex-col items-center justify-center gap-4 text-text-light font-titulo font-light">
+            <TitleArrow class=" text-8xl animate-fade animate-delay-500">
+                404
+            </TitleArrow>
+            <p class="animate-fade animate-delay-1000 text-xl text-center px-4">
+                Desafortunadamente la página a la que intentas entrar no está funcionado...
+            </p>
+            <a href="/" class=" text-xl bg-text-light/10 hover:bg-text-light/20 transition-colors rounded-lg px-4 py-2 animate-fade animate-delay-[1500ms]">
+                Regresar al inicio
+            </a>
+        </section>
+    </main>
+</Layout>
