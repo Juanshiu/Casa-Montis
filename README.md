@@ -14,7 +14,7 @@ Casa Montis es un rincón gourmet donde la pasión por la buena comida se encuen
 
 ## Licencia
 
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
 
 ---
 
