@@ -1,5 +1,5 @@
 # Casa Montis
-![just-the-basics](./public/img/preview.webp)
+![just-the-basics](./public/preview.webp)
 
 ## Descripción
 
