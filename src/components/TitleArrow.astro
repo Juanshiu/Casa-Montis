@@ -1,4 +1,6 @@
 ---
+import Flecha from '@/assets/svg/flecha.svg';
+
 export interface Props {
     class?: string;
 }
@@ -7,7 +9,7 @@ const { class: className } = Astro.props;
 ---
 
 <h2 class={`${className} text-center text-text-light flex items-center justify-center gap-3 `}>
-    <img src="/src/assets/svg/flecha.svg" class=" w-8 h-auto rotate-180" alt="">
-    <slot />
-    <img src="/src/assets/svg/flecha.svg" class=" w-8 h-auto" alt="">
+    <Flecha class={' w-8 h-auto rotate-180'}/>
+    <slot/>
+    <Flecha class={' w-8 h-auto '}/>
 </h2>
