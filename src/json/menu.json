@@ -284,6 +284,16 @@
                 "nombre": "PEPINO RELLENO EN SALSA CHAMPIÑON",
                 "acompañamientos": "Arroz, patacón, aguacate y ensalada.",
                 "imagen": "pepino_relleno.jpg"
+            },
+            {
+                "nombre": "ARROZ LIBERTADOR",
+                "acompañamientos": "Patacón y aguacate.",
+                "imagen": "arroz_libertador.jpg"
+            },
+            {
+                "nombre": "ARMONÍA RÚSTICA",
+                "acompañamientos": "Cerdo en salsa blanca de jamón y champiñon, arroz, patacón rústico, aguacate y ensalada.",
+                "imagen": "armonia_rustica.jpg"
             }
         ]
     }
