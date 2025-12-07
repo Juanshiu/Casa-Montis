@@ -297,12 +297,12 @@
             },
             {
                 "nombre": "Paella en lomitos de res",
-                "acompañamientos": " Paella con trozos de lomito de res y papa a la francesa.",
+                "acompañamientos": "Papa a la francesa.",
                 "imagen": "paella_en_lomitos.jpg"
             },
             {
                 "nombre": "Rollitos de Pechuga en salsa BBQ",
-                "acompañamientos": "Lomitos de pechuga en salsa BBQ, arroz, aguacate, patacón y ensalada.",
+                "acompañamientos": "Arroz, aguacate, patacón y ensalada.",
                 "imagen": "rollitos_de_pechuga.jpg"
             }
         ]
