@@ -294,6 +294,16 @@
                 "nombre": "ARMONÍA RÚSTICA",
                 "acompañamientos": "Cerdo en salsa blanca de jamón y champiñon, arroz, patacón rústico, aguacate y ensalada.",
                 "imagen": "armonia_rustica.jpg"
+            },
+            {
+                "nombre": "Paella en lomitos de res",
+                "acompañamientos": " Paella con trozos de lomito de res y papa a la francesa.",
+                "imagen": "paella_en_lomitos.jpg"
+            },
+            {
+                "nombre": "Rollitos de Pechuga en salsa BBQ",
+                "acompañamientos": "Lomitos de pechuga en salsa BBQ, arroz, aguacate, patacón y ensalada.",
+                "imagen": "rollitos_de_pechuga.jpg"
             }
         ]
     }
